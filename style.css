@@ -417,7 +417,10 @@ img.gousei2	{width: 200px;
 ul	{width: 270px;
 	 grid-template-rows: 100px 50px 75px 60px 70px}
 
-
+.boxB	{width: 280px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 padding-left: 100px}
 } 
 /*########## 414px以上～599px以下##########*/
 @media (min-width: 414px) and (max-width: 600px){
