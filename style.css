@@ -8,6 +8,18 @@ body	{margin: 0;
 
 h2	{font-family: 'Bitter', serif;}
 
+.back	{padding-bottom: 50px}
+
+.back a {font-size: 18px;
+	 border: solid 1px #000000;
+	 padding: 5px;
+	 color: #77B4BE;
+	 text-decoration: none;
+	 border-radius: 5px}
+
+.back a:active {color: #ffffff;
+		background-color: rgba(0,0,0,0.2)}
+
 /*タイトル*/
 .toping		{max-width: 100%;
  		 height: auto;
