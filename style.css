@@ -17,7 +17,6 @@ h2	{font-family: 'Bitter', serif;}
 	 text-decoration: none;
 	 border-radius: 5px}
 
-.box3	{margin-bottom: 40px}
 
 .back a:active {color: #ffffff;
 		background-color: rgba(0,0,0,0.2)}
@@ -51,7 +50,7 @@ h2	{font-family: 'Bitter', serif;}
 .hobby img	{width:450px;
 		 height: 260px}
 
-.unfinished img {width:450px;
+.prof img {width:450px;
 		 height: 260px}
 
 /*mylogoカーソル合わせ*/
@@ -106,11 +105,11 @@ h2	{font-family: 'Bitter', serif;}
 		     	 	 padding-left: 140px;	/* 右にずらす */}
 
 /*unfinishedカーソル合わせ*/
-.unfinished		{overflow: hidden;
+.prof		{overflow: hidden;
 		 	 position: relative;}
 
 
-.unfinished .mask	{width: 100%;
+.prof .mask	{width: 100%;
 		 	 height: 100%;
 		 	 position: absolute;
 		 	 top: 0;
@@ -120,7 +119,7 @@ h2	{font-family: 'Bitter', serif;}
 		 	 -webkit-transition: all 0.6s ease;
 		 	 transition: all 0.6s ease}
 
-.unfinished:hover  .mask		{opacity: 1;	/* マスクを表示する */
+.prof:hover  .mask		{opacity: 1;	/* マスクを表示する */
 		     	 	 	 padding-left: 120px;	/* 右にずらす */}
 
 /*全カーソル合わせ*/
@@ -144,7 +143,7 @@ h2	{font-family: 'Bitter', serif;}
 
 .box2-4		{position: relative}
 
-.unfinished	{position: absolute}
+.prof	{position: absolute}
 
 /*box3を重ねる設定*/
 .box3-1		{position: relative;}
@@ -289,14 +288,14 @@ h4		{margin-bottom: 0}
 .sakuhin ul	{margin-left: auto;
 		 margin-right: auto}
 
- ul 	{list-style-type: none;
+.sakuhin ul 	{list-style-type: none;
          width: 400px;
          display: grid;
          grid-gap: 1rem;
          grid-template-columns: 2fr 1fr 1.5fr;
          grid-template-rows: 180px 90px 135px 100px 120px}
 
-li	{font-size: 26px;
+.sakuhin li	{font-size: 26px;
          background-color: lightgray;
          border: solid 1px black}
         
@@ -331,12 +330,47 @@ li	{font-size: 26px;
 .la_9	{background-image: url(momijikawa.jpg);
 	 background-size: cover}
 
+/*meページ*/
+.workspeace	{width: 40%;
+		 height: auto}
+
+.workspeace img {width: 100%}
+
+.history	{width: 100%;
+		 margin-left: auto;
+		 margin-right: auto;
+		 font-size: 14px}
+
+/*Profileページ*/
+.syumi h3	{font-family: "Sawarabi Mincho"}
+
+
+
+.syumi ul	{list-style-type: circle;
+		 font-size: 15px;
+		 margin: 0}
+
+.like h3	{font-family: "Sawarabi Mincho"}
+
+
+.like ul	{list-style-type: circle;
+		 font-size: 15px;
+		 margin: 0}
+
+.manga h3	{font-family: "Sawarabi Mincho"}
+
+
+.manga ul	{list-style-type: circle;
+		 font-size: 15px;
+		 margin: 0}
 
 /*########## 320px以上～413px以下##########*/
 @media (min-width: 320px) and (max-width: 413px){
 
 .box2-1,.box2-2,.box2-3,.box2-4		{width: 300px;
 		 	 		 height: 170px}
+
+.box3	{margin-bottom: 40px}
 
 .boxB	{width: 310px;
 	 margin-left: auto;
@@ -351,10 +385,10 @@ li	{font-size: 26px;
 .hobby img		{width: 300px;
 		 	 height: 170px}
 
-.unfinished img		{width: 300px;
+.prof img		{width: 300px;
 		 	 height: 170px}
 
-.mylogo,.bar,.hobby,.unfinished 		{width: 300px;
+.mylogo,.bar,.hobby,.prof 		{width: 300px;
 		 	 			 height: 170px}
 
 /*mylogopageのレスポンシブ*/
@@ -428,13 +462,27 @@ img.gousei2	{width: 200px;
 		 font-size: 9px;
 		 padding-left: 10px}
 
-ul	{width: 270px;
+.sakuhin ul	{width: 270px;
 	 grid-template-rows: 100px 50px 75px 60px 70px}
 
 .boxB	{width: 280px;
 	 margin-left: auto;
 	 margin-right: auto;
 	 padding-left: 0}
+
+/*meページ*/
+.syumi h3	{font-size: 15px}
+
+.syumi ul	{font-size: 14px}
+
+.like h3	{font-size: 15px}
+
+.like ul	{font-size: 14px}
+
+.manga h3	{font-size: 15px}
+
+.manga ul	{font-size: 14px}
+
 } 
 /*########## 414px以上～599px以下##########*/
 @media (min-width: 414px) and (max-width: 600px){
@@ -442,6 +490,8 @@ ul	{width: 270px;
 /*ボックス2内レスポンシブ*/
 .box2-1,.box2-2,.box2-3,.box2-4		{width: 340px;
 		 	 		 height: 200px}
+
+.box3	{margin-bottom: 40px}
 
 .mylogo img		{width: 340px;
 		 	 height: 200px}
@@ -452,10 +502,10 @@ ul	{width: 270px;
 .hobby img		{width: 340px;
 		 	 height: 200px}
 
-.unfinished img		{width: 340px;
+.prof img		{width: 340px;
 		 	 height: 200px}
 
-.mylogo,.bar,.hobby,.unfinished 		{width: 340px;
+.mylogo,.bar,.hobby,.prof 		{width: 340px;
 		 	 			 height: 200px}
 
 /*カーソル合わせ*/
@@ -534,11 +584,32 @@ img.gousei2	{width: 250px;
 		 font-size: 12px;
 	 	 padding-left: 30px}
 
+
+/*meページ*/
+.syumi h3	{font-size: 15px}
+
+.syumi ul	{font-size: 14px}
+
+.like h3	{font-size: 15px}
+
+.like ul	{font-size: 14px}
+
+.manga h3	{font-size: 15px}
+
+.manga ul	{font-size: 14px}
+
+
 }
 
 /*########## 600px以上##########*/
 @media (min-width: 600px){
 .boxB	{width: 500px}
+
+.symbol p	{width: 500px;
+		 font-size: 11px}
+
+.typo p		{width: 500px;
+		 font-size: 11px}
 
 .theme	{width: 480px}
 
@@ -549,7 +620,24 @@ h2	{margin-left: 30px}
 .hobbypage p {padding-left: 30px;
 	      font-size: 14px}
 
-ul 	{width: 500px}
+.sakuhin ul 	{width: 500px}
+
+/*meページ*/
+.workspeace	{width: 50%;
+		 float: left;}
+
+.syumi h3	{font-size: 15px}
+
+.syumi ul	{font-size: 12px}
+
+.like h3	{font-size: 15px}
+
+.like ul	{font-size: 12px}
+
+.manga h3	{font-size: 15px}
+
+.manga ul	{font-size: 12px}
+
 }
 
 /*########## 718px以上##########*/
@@ -558,8 +646,42 @@ ul 	{width: 500px}
 
 .theme	{width: 580px}
 
-ul	{width: 700px;
+.symbol p	{width: 600px;
+		 font-size: 14px}
+
+.typo img		{height: 150px}
+
+.typo p	{width: 600px;
+		 font-size: 14px}
+
+
+
+.sakuhin ul	{width: 700px;
 	 grid-template-rows: 300px 200px 250px 100px 250px}
+
+.history	{margin-bottom: 50px}
+
+/*meページ*/
+.syumi		{overflow: hidden}
+
+
+.like		{overflow: hidden}
+
+.manga		{overflow: hidden}
+
+
+.syumi h3	{font-size: 16px}
+
+.syumi ul	{font-size: 13px}
+
+.like h3	{font-size: 16px}
+
+.like ul	{font-size: 13px}
+
+.manga h3	{font-size: 16px}
+
+.manga ul	{font-size: 13px}
+
 
 }
 
@@ -586,7 +708,7 @@ ul	{width: 700px;
 /*ヴァーチャルテーマ*/
 
 
-
+/*meページ*/
 
 }
 
@@ -635,7 +757,7 @@ ul	{width: 700px;
     		 -webkit-transform: translate(-50%,-15%);
     		 -ms-transform: translate(-50%,-15%)}
 
-.unfinished	{bottom: 15%;
+.prof	{bottom: 15%;
     		 left: 50%;
    		 transform: translate(-50%,-15%);
     		 -webkit-transform: translate(-50%,-15%);
@@ -654,7 +776,15 @@ ul	{width: 700px;
 /*box3スペース調整*/
 .box3		{padding-top: 50px}
 
-/*バナー*/
+/*bar*/
+.symbol p	{width: 800px;
+		 font-size: 16px}
+
+
+.typo p	{width: 800px;
+		 font-size: 16px}
+
+
 /*重ねる設定*/
 .boxJ:after	{content:"";
 		 display: block;
@@ -721,6 +851,15 @@ ul	{width: 700px;
 		 font-size: 14px}
 
 
-ul	{width: 900px}
+.sakuhin ul	{width: 900px}
+
+/*meページ*/
+.workspeace	{width: 50%}
+
+.syumi ul	{font-size: 15px}
+
+.like ul	{font-size: 15px}
+
+.manga ul	{font-size: 15px}
 
 }
