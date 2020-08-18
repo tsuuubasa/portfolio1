@@ -1,0 +1,980 @@
+@charset "UTF-8";
+
+body {font-family:'Sawarabi Gothic', "Hiragino Kaku Gothic ProN", gothic; 
+      text-transform: uppercase
+}
+/*中央設定*/
+.center {width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#FFFCED}
+
+#header {background-color: #fff;}
+
+/*キャッチ画像の設定*/
+.catch img {width: 800px;
+            vertical-align: bottom}
+
+/*ヘッダー設定*/
+.logo {width: 150px;
+       margin: 5px 10px;
+       float: left}
+
+.name {font-size: 8px;
+       padding-top: 20px;}
+
+header {display: flex;
+        justify-content: space-between;
+        border: solid 1px #000;
+        position:relative;
+        flex-wrap: wrap;
+        background-color: #fff;
+        padding-top: 10px}
+        
+.top {width: 75%}
+
+.list {width: 100%}
+
+/*メニュー*/
+.item {margin: 0 0 20px 0;
+       padding: 10px;
+       text-align: center}
+
+.item a {color: #000;
+         text-decoration: none;
+         width: 80%;
+         margin: 0 auto}
+         
+
+.menu ul {margin: 0;
+          padding: 0;
+          list-style: none}
+
+.menu li {padding: 0;
+          margin: 0}
+
+#list {display: none}
+
+
+
+.menu i {font-size: 20px;
+         padding: 2px;
+         color: #24A1BF}
+         
+.list li a {width: 300px;
+            margin: 0 auto;
+            position: relative;
+            display: inline-block;
+            font-size: 20px}
+            
+.list li a::after {position: absolute;
+                   bottom: -4px;
+                   left: 0;
+                   content: '';
+                   width: 100%;
+                   height: 2px;
+                   background: #707070;
+                   transform: scale(0, 1);
+                   transform-origin: left top;
+                   transition: transform .3s;}
+                   
+.list li a:hover::after {transform: scale(1, 1);}
+
+/*トグルボタン*/
+#menubtn {margin:20px;
+          cursor:pointer;
+          border-radius: 5px;
+          border-color: #24A1BF;
+          background-color: #fff}
+
+#menubtn:focus {outline: none}
+
+#menubtn span {display: inline-block;
+               text-indent: -9999px}
+
+/*お知らせ*/
+.index-news {padding: 50px 0}
+
+.index-news h2 {margin-left: 100px;
+                margin-bottom: 15px}
+
+.box_srcollbar {
+        overflow:auto;
+        width:610px;
+        height:70px;
+        padding:5px;
+        border:1px solid #707070;
+        background-color:#F9F9F9;
+        color:#000;
+        font-size:15px;
+        line-height: 1.5}
+        
+.box_srcollbar time {color: #9C9A9A;
+}
+
+.box_srcollbar a {color: #707070}
+
+.box_srcollbar a:hover {color:#DB9748;
+                        text-decoration: none}
+
+.text {margin-top: 5px;
+       margin-bottom: 10px}
+       
+/*gaiyou設定*/
+.under {border-bottom: double 6px #BCDCE6}
+
+.hukidasi p {padding: 20px;
+             font-size: 17px;
+             font-weight: bold;
+             font-family:"Sawarabi Mincho","mincho",serif; }
+
+.hukidasi{width: 500px;
+          margin: 0 auto;
+          position: relative;
+          border-top: solid 2px black;
+          border-bottom: solid 2px black;
+          text-align: center;}
+
+.hukidasi:before, .hukidasi:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;}
+
+.hukidasi:before {left: 10px;}
+
+.hukidasi:after {right: 10px;}
+
+/*コース紹介*/
+.syoukai {padding: 50px 0;}
+
+.syoukai h2 {margin-left: 100px;
+             margin-bottom: 30px}
+
+.course i {font-size: 30px;
+           margin-bottom: 30px;
+           padding-top: 40px}
+
+.course p {font-size: 12px;
+           line-height: 1.5}
+
+.course strong {font-size: 13px}
+
+.course {display: flex;
+         justify-content: space-around;}
+
+
+
+.web-course {width: 180px;
+             height: 180px;
+             border-radius: 50%;
+             text-align: center;
+             background-color: #B2DBF8;
+             border: 5px solid #E7F3FC}
+
+.cad-course {width: 180px;
+             height: 180px;
+             border-radius: 50%;
+             text-align: center;
+             background-color: #F5D2AA;
+             border: 5px solid #FFF0DE}
+
+.keiri-course {width: 180px;
+             height: 180px;
+             border-radius: 50%;
+             text-align: center;
+             background-color: #BFFFC4;
+             border: 5px solid #EDFDEE}
+
+.iryou-course {width: 180px;
+             height: 180px;
+             border-radius: 50%;
+             text-align: center;
+             background-color: #FFD8F1;
+             border: 5px solid #FDEDF8}
+             
+/*中間*/
+.chukan {text-align: center}
+
+.chukan p {margin-bottom: 5px;
+           font-size: 13px;
+           line-height: 1.5}
+           
+.chukan i {font-size: 25px;
+           margin-bottom: 30px}
+
+/*詳細*/
+
+/*タブ切り替え全体のスタイル*/
+.tabs {padding-bottom: 40px;
+       background-color: #FFFEF8;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+       width: 700px;
+       margin: 0 auto;}
+       
+.tabs label:hover {cursor: pointer}
+
+/*タブのスタイル*/
+.tab_item {padding-top: 20px;
+           width: calc(100%/5);
+           height: 40px;
+           border-bottom: 2px solid #A7A7A7;
+           font-size: 14px;
+           text-align: center;
+           color: #565656;
+           display: block;
+           float: left;
+           font-weight: bold;
+           transition: all 0.2s ease;
+           background-color: #fff}
+
+.tab_item:hover {opacity: 0.8;}
+
+.web-tab {background-color: #B2DBF8}
+.cad-tab {background-color: #F5D2AA}
+.keiri-tab {background-color: #BFFFC4}
+.iryou-tab {background-color: #FFD8F1}
+.kako-tab {background-color: #F2F5AA}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {display: none;}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {display: none;
+              padding: 40px 40px 0;
+              clear: both;
+              overflow: hidden;}
+              
+/*選択されているタブのコンテンツのみを表示*/
+#web:checked ~ #web_content,
+#cad:checked ~ #cad_content,
+#keiri:checked ~ #keiri_content, 
+#iryou:checked ~ #iryou_content,
+#kako:checked ~ #kako_content {display: block;}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {border: none;
+                                 background-color: #fff;}
+
+.tabs input:checked + .web-tab {border-bottom: #B2DBF8 2px dashed}
+
+.tabs input:checked + .cad-tab {border-bottom: #F5D2AA 2px dashed}
+
+.tabs input:checked + .keiri-tab {border-bottom: #BFFFC4 2px dashed}
+
+.tabs input:checked + .iryou-tab {border-bottom: #FFD8F1 2px dashed}
+
+.tabs input:checked + .kako-tab {border-bottom: #F2F5AA 2px dashed}
+
+/*タブ内*/
+.intab h3 {font-size: 20px;
+           margin-bottom: 20px}
+      
+.sm-news {margin-bottom: 20px}
+    
+.sm-news p {font-size: 14px;
+            margin-left: 40px;
+            padding-bottom: 10px}
+            
+.naiyou {width: 580px;
+         margin-left: auto;
+         margin-right: auto}
+
+.naiyou small {font-size: 11px;
+               color: #707070}
+
+/*カテゴリー設定*/
+.category {margin-bottom: 60px;
+           text-transform: capitalize}
+
+#cad_content .category {text-transform: uppercase}
+
+#cad_content .hyou {text-transform: uppercase}
+
+
+.category p {border: 1px solid #707070;
+             padding: 20px;
+             font-size: 13px;
+             line-height: 1.8}
+
+.category ul {border: 1px solid #707070;
+             padding: 20px;
+             font-size: 13px;
+             line-height: 1.8;
+             list-style-type: circle}
+
+.category li {margin-left: 20px}
+
+.category h4 {border-left: 5px solid #707070;
+              padding-left: 5px}
+
+
+/*表*/
+.hyou h5 {text-align: center;
+          background-color: #BCDCE6;
+          color: #707070;
+          padding: 8px 0;
+          font-weight: normal}
+         
+.hyou {border: solid 1px #707070;
+       margin-bottom: 10px;
+       text-transform: capitalize}
+         
+.hyou ul {line-height: 2;
+          padding: 20px;
+          list-style-type: circle}
+
+.hyou li {list-style-position: inside;
+          margin-left: 100px;
+          font-size: 13px}
+
+.hyou p {padding: 10px;
+         font-size: 14px;
+         margin-left: 30px}
+
+/*定員に達した日にち*/
+.no-time {text-decoration: line-through}
+
+/*見学について*/
+.kengaku {text-align: center;}
+
+.shiryou {width: 150px;
+          margin: 10px auto;
+          border: 3px #707070 solid;
+          padding: 10px;}
+
+.shiryou p {margin: 5px auto 0 auto;
+           font-size: 15px;
+           padding-left: 10px}
+
+.shiryou i {background-color: #F8F48F;
+         margin: 0 0 0 130px;
+         font-size: 20px;
+         border-radius: 50%}
+/*表下*/
+.hyou-sita {margin-bottom: 50px;
+            text-align: center}
+            
+/*表内の連絡の設定*/
+.jizen {text-align: center}
+
+/*連絡方法*/
+.renraku-hou {display: flex;
+              justify-content: space-around}
+
+.tel {border: 3px #707070 solid;
+      padding: 10px;
+      width: 180px}
+
+.tel div {margin: 5px auto 0 auto;
+          font-size: 15px}
+
+.tel i {background-color: #F8F48F;
+        margin: 10px 0 0 130px;
+        font-size: 20px;
+        border-radius: 50%}
+
+.foam {border: 3px #707070 solid;
+       padding: 10px;
+       width: 180px}
+
+.foam div {margin: 5px auto 0 auto;
+           font-size: 15px;
+           padding-left: 10px}
+
+.foam i {background-color: #F8F48F;
+         margin: 10px 0 0 130px;
+         font-size: 20px;
+         border-radius: 50%}
+    
+.renreku-sita {margin: 30px 0}
+
+/*過去の開講についてのテーブル設定*/
+table {border-collapse: collapse;
+       border-spacing: 0;
+       width: 100%;}
+
+table tr {border-bottom: solid 1px #eee;}
+
+table th,table td {text-align: center;
+                   width: 30%;
+                   padding: 15px 0;}
+
+.jisseki .fas {margin-right: 10px;
+               padding: 10px;
+               border-radius: 50%;
+               color: #4C4B4B}
+
+.jisseki .fa-laptop {background-color: #B2DBF8}
+
+.jisseki .fa-ruler-combined {background-color: #F5D2AA;}
+
+.jisseki .fa-calculator {background-color: #BFFFC4}
+
+.jisseki .fa-cross {background-color: #FFD8F1}
+/*アクセス*/
+#location {width: 580px;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 70px;
+           padding-bottom: 80px;
+           position: relative}
+           
+.location-info {background-color: #BCDCE6;
+                color: #707070;
+                padding:10px 0 10px 50px}
+                
+.location-info p {font-size: 12px;
+                  line-height: 1.5}
+                  
+.location-info h3 {font-size: 13px;
+                   margin-bottom: 10px}
+
+.toho {width: 160px;
+       height: 160px;
+       border-radius: 50%;
+       text-align: center;
+       background-color: #FFFEF8;
+       border: 5px solid #E6E6E6;
+       font-size: 11px;
+       line-height: 2.5;
+       position: absolute;
+       left: 60%;
+       bottom: 0}
+
+.toho p {margin-top: 25px;
+         font-size: 11px}
+
+.marker {background: linear-gradient(transparent 75%, #ff99ab 30%);}
+
+/*お問合せ*/
+.otoiawase {padding-bottom: 80px}
+
+.otoiawase h2 {margin: 60px 0 30px 100px}
+
+.foam-large {border: 4px #707070 solid;
+             width: 280px;
+             display: flex;
+             padding: 20px 10px;
+             margin-left: auto;
+             margin-right: auto}
+             
+.foam-large p {font-size: 17px;
+               padding-right: 10px;
+               margin-top: 3px}
+
+.foam-large i {background-color: #F8F48F;
+               font-size: 25px;
+               border-radius: 50%;}
+               
+/*ご予約*/
+.yoyaku {width: 440px;
+         margin: 40px auto 0 auto;
+         border: solid 1px #707070;
+         text-align: center;
+         padding: 15px 0}
+         
+.number {font-size: 24px;
+         font-weight: bold;
+         margin: 20px 0}
+         
+.number i {margin-right: 10px;
+           font-size: 30px;
+           color: #BCDCE6}
+         
+.yoyaku p {font-size: 13px}
+
+.day {width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border: solid 1px #707070;
+      background-color: #BCDCE6;
+      padding: 5px 0}
+      
+/*フッター*/
+footer {width: 800px;
+        margin: 0 auto;
+        background-color: #707070;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap}
+        
+.footer-name {width: 30%;
+              font-size: 12px;
+              padding: 20px 0 10px 20px;
+              box-sizing: border-box}
+                            
+.footer-menu {width: 70%;
+              font-size: 12px;
+              display: flex;
+              justify-content: space-around;
+              padding: 25px 0 15px 0;
+              box-sizing: border-box}
+              
+footer p {font-size: 12px;
+          margin: 5px 0 5px 20px}
+          
+/*########## 800px以下##########*/
+@media (max-width: 800px){
+/*ヘッダー*/
+.center {width: 600px}
+
+.catch img {width: 600px}
+
+.logo {width: 100px}
+
+.name {font-size: 10px;
+       padding: 10px 0;}
+
+#menubtn {margin: 12px}
+
+.menu i {font-size: 15px;}
+
+.list li a {font-size: 14px}
+
+/*お知らせ*/
+.box_srcollbar {width: 400px;
+                font-size: 12px}
+                
+/*中間*/
+.hukidasi {width: 470px}
+
+.hukidasi p {font-size: 16px}
+
+/*コース紹介*/
+.web-course {width: 150px;
+             height: 150px;
+             box-sizing: border-box}
+
+.cad-course {width: 150px;
+             height: 150px;
+             box-sizing: border-box}
+
+.keiri-course {width: 150px;
+               height: 150px;
+               box-sizing: border-box}
+
+.iryou-course {width: 150px;
+               height: 150px;
+               box-sizing: border-box}
+
+
+.course i {margin-bottom: 10px;
+           padding-top: 20px}
+           
+.course p {font-size: 11px}
+
+.chukan p {font-size: 10px}
+
+/*タブ*/
+.tabs {width: 550px}
+
+.tab_item {font-size: 12px;}
+
+/*タブ内*/
+.intab h3 {font-size: 16px;}
+    
+.sm-news p {font-size: 12px;
+            margin-left: 15px;}
+            
+.naiyou {width: 400px;}
+
+.naiyou small {font-size: 10px;}
+
+
+/*カテゴリー設定*/
+.category {margin-bottom: 50px}
+
+.category p {padding: 15px;
+             font-size: 12px;
+             line-height: 1.2}
+
+.category ul {padding: 15px;
+              font-size: 12px;
+              line-height: 1.7;}
+
+.category h4 {padding-left: 5px}
+
+/*表*/
+.hyou h5 {font-size: 14px}
+
+.hyou li {margin-left: 10px;
+          font-size: 10px;
+          line-hight: 1.2}
+
+.hyou p {padding: 10px;
+         font-size: 12px;
+         margin-left: 15px}
+
+table th,table td {font-size: 12px}
+
+/*連絡の設定*/
+
+.tel {width: 140px;
+      margin: 10px auto}
+
+.tel div {font-size: 13px}
+
+.tel i {margin: 10px 0 0 60px;
+        font-size: 18px}
+
+.foam {width: 140px;
+       margin: 10px auto}
+
+.foam div {font-size: 13px;}
+
+.foam i {margin: 10px 0 0 60px;
+         font-size: 18px}
+    
+.shiryou {width: 120px;
+          padding: 0;}
+
+.shiryou i {margin: 5px}
+
+.shiryou p {margin: 10px 0 0 0}
+
+.renreku-sita {margin: 10px}
+
+/*アクセス*/
+#location {width: 400px;}
+
+.map {width: 400px;
+      height: 400px;}
+                
+.location-info p {font-size: 11px;}
+                  
+.location-info h3 {font-size: 12px;
+                   margin-bottom: 5px}
+
+.toho {width: 150px;
+       height: 150px;
+       font-size: 11px;
+       line-height: 2;
+       left: 60%;
+       bottom: 0}
+
+.toho p {margin-top: 35px;
+         font-size: 10px}
+
+/*お問合せ*/
+.foam-large {width: 250px;
+             padding: 10px;}
+             
+.foam-large p {font-size: 14px;
+               margin-right: 5px;
+               margin-top: 5px}
+
+.foam-large i {font-size: 25px;}
+
+/*予約*/
+.yoyaku {width:400px;}
+         
+.number {font-size: 21px;}
+        
+.number i {font-size: 25px;}
+         
+.yoyaku p {font-size: 12px}
+
+.day {width: 220px;
+      padding: 5px;
+      font-size: 12px}
+      
+/*フッター*/
+footer {width: 600px;}
+        
+.footer-name {font-size: 11px;
+              margin-bottom: 15px}
+                            
+.footer-menu {font-size: 10px;
+              padding: 50px 0 0 10px}
+              
+footer p {font-size: 12px;
+          margin: 20px 0 5px 20px}
+
+}
+
+          
+          
+/*########## 599px以下 ##########*/
+@media (max-width: 599px){
+/*ヘッダー*/
+.center {width: 100%}
+
+.catch img {width: 100%}
+
+.logo {width: 25%}
+
+.name {font-size: 8px;
+       padding: 10px 0;}
+
+#menubtn {margin: 10px}
+
+.menu i {font-size: 15px;}
+
+.list li a {font-size: 14px}
+
+/*お知らせ*/
+.box_srcollbar {width: 250px;
+                font-size: 12px}
+                
+/*中間*/
+.hukidasi {width: 300px}
+
+.hukidasi p {font-size: 14px}
+
+/*コース紹介*/
+.course {flex-wrap: wrap}
+
+.web-course {width: 50%;
+             height: 160px;
+             box-sizing: border-box}
+
+.cad-course {width: 50%;
+             height: 160px;
+             box-sizing: border-box}
+
+.keiri-course {width: 50%;
+               height: 160px;
+               box-sizing: border-box}
+
+.iryou-course {width: 50%;
+               height: 160px;
+               box-sizing: border-box}
+
+.course i {margin-bottom: 10px}
+           
+.course p {font-size: 11px}
+
+.chukan p {font-size: 10px}
+
+/*タブ*/
+.tabs {width: 95%}
+
+.tab_item {font-size: 10px;}
+
+/*タブ内*/
+.intab h3 {font-size: 15px;}
+    
+.sm-news p {font-size: 10px;
+            margin-left: 10px;}
+            
+.naiyou {width: 240px;
+         margin-left: auto;
+         margin-right: auto}
+
+.naiyou small {font-size: 10px;}
+
+
+/*カテゴリー設定*/
+.category {margin-bottom: 50px}
+
+.category p {padding: 15px;
+             font-size: 11px;
+             line-height: 1.2}
+
+.category ul {padding: 15px;
+              font-size: 11px;
+              line-height: 1.7;}
+
+.category h4 {padding-left: 5px}
+
+/*表*/
+.hyou h5 {font-size: 14px}
+
+.hyou li {margin-left: 0px;
+          font-size: 10px;
+          line-hight: 1.2}
+
+.hyou p {padding: 10px;
+         font-size: 10px;
+         margin-left: 10px}
+
+table th,table td {width: 45%;
+                   font-size: 10px}
+
+.jisseki .fas {padding: 0}
+
+/*連絡の設定*/
+.renraku-hou {flex-direction: column}
+
+.tel {width: 120px;
+      margin: 10px auto}
+
+.tel div {font-size: 12px}
+
+.tel i {margin: 10px 0 0 50px;
+        font-size: 16px}
+
+.foam {width: 120px;
+       margin: 10px auto}
+
+.foam div {font-size: 11px;}
+
+.foam i {margin: 10px 0 0 50px;
+         font-size: 16px}
+    
+.renreku-sita {margin: 10px 0}
+
+/*アクセス*/
+#location {width: 240px;}
+
+.map {width:240px;
+      height: 350px;
+      margin: 0 auto}
+           
+.location-info {padding: 5px}
+                
+.location-info p {font-size: 10px;}
+                  
+.location-info h3 {font-size: 10px;
+                   margin-bottom: 5px}
+
+.toho {width: 140px;
+       height: 100px;
+       font-size: 10px;
+       line-height: 1.8;
+       left: 50%;
+       bottom: 0}
+
+.toho p {margin-top: 15px;
+         font-size: 10px}
+
+/*お問合せ*/
+.foam-large {width: 230px;
+             padding: 10px;}
+             
+.foam-large p {font-size: 13px;
+               margin-right: 5px;
+               margin-top: 6px}
+
+/*予約*/
+.yoyaku {width:300px;}
+         
+.number {font-size: 20px;}
+        
+.number i {font-size: 25px;}
+         
+.yoyaku p {font-size: 11px}
+
+.day {width: 180px;
+      padding: 5px;
+      font-size: 11px}
+      
+/*フッター*/
+footer {width: 100%;}
+        
+.footer-name {width:100%;
+              display: block;
+              font-size: 10px;}
+                            
+.footer-menu {width: 100%;
+              font-size: 10px;
+              padding: 0}
+              
+footer p {font-size: 11px;}
+
+}
+
+/*########## 1000px以上 ##########*/
+@media (min-width: 1000px){
+.center {width:1000px}
+
+.catch img {width: 1000px;}
+
+.index-news h2 {margin: 30px 0 25px 200px}
+
+.box_srcollbar {width: 700px;
+                margin-bottom: 30px}
+
+.hukidasi {width: 550px;}
+
+.hukidasi p {padding: 30px}
+
+.syoukai h2 {margin: 50px 0 25px 200px}
+
+.web-course {width: 210px;
+             height: 210px;}
+
+.cad-course {width: 210px;
+             height: 210px;}
+
+.keiri-course {width: 210px;
+             height: 210px;}
+             
+.iryou-course {width: 210px;
+             height: 210px;}
+
+.course i {font-size: 40px}
+
+.course p {font-size: 14px}
+
+.chukan p {font-size: 13px}
+
+.tabs {width: 900px}
+
+.tabs br {display: none}
+
+.tab_item {padding-top: 25px}
+
+.intab h3 {margin-left: 50px}
+
+.sm-news {margin: 10px 0 30px 40px}
+
+.naiyou {width: 700px}
+
+.category p {font-size: 14px}
+
+.category li {font-size: 14px}
+
+.hyou h5 {padding: 12px 0;}
+
+.hyou li {font-size: 14px}
+
+.hyou p {font-size: 15px}
+
+.kengaku {margin: 20px 0}
+
+#location {width: 700px;
+           margin-top: 150px}
+
+.map {width: 700px}
+
+.location-info h3 {font-size: 15px}
+
+.location-info p {font-size: 14px;
+                  padding: 5px}
+                  
+.toho {width: 190px;
+       height: 190px;
+       line-height: 2.2;
+       left: 55%;}
+
+.toho p {margin: 40px 0 0 0;
+         font-size: 13px}
+
+.otoiawase h2 {margin: 60px 0 50px 200px}
+
+.foam-large {width: 350px;}
+
+.foam-large p {font-size: 18px;
+               margin-left: 30px}
+               
+.yoyaku {width: 550px;
+         padding: 30px 0}
+
+.yoyaku p {font-size: 14px}
+
+.number {font-size: 30px}
+
+.number i {font-size: 33px}
+
+.day {width: 400px}
+
+footer {width: 1000px}
+
+.footer-name,.footer-menu {padding-top: 30px;
+              padding-bottom: 20px}
+}
