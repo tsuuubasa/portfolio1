@@ -31,7 +31,7 @@ h2	{font-family: 'Bitter', serif;}
 /*ボックスの設定*/
 .box2		{background-color: #FBFBFB}
 
-.box2-1,.box2-2,.box2-3,.box2-4		{width: 480px;
+.box2-1,.box2-2,.box2-3,.box2-4,.box2-5,.box2-6		{width: 480px;
 					 height: 280px;
 					 margin-left: auto;
 					 margin-right: auto}
@@ -44,13 +44,19 @@ h2	{font-family: 'Bitter', serif;}
 .mylogo img	{width: 450px;
 		 height: 260px}
 
-.bar img	{width:450px;
+.bar img	{width: 450px;
 		 height: 260px}
 
-.hobby img	{width:450px;
+.hobby img	{width: 450px;
 		 height: 260px}
 
-.prof img {width:450px;
+.prof img 	{width: 450px;
+		 height: 260px}
+
+.lp img 	{width: 450px;
+		 height: 260px}
+
+.unfinished img 	{width: 450px;
 		 height: 260px}
 
 /*mylogoカーソル合わせ*/
@@ -104,7 +110,7 @@ h2	{font-family: 'Bitter', serif;}
 .hobby:hover  .mask		{opacity: 1;	/* マスクを表示する */
 		     	 	 padding-left: 140px;	/* 右にずらす */}
 
-/*unfinishedカーソル合わせ*/
+/*profカーソル合わせ*/
 .prof		{overflow: hidden;
 		 	 position: relative;}
 
@@ -121,6 +127,42 @@ h2	{font-family: 'Bitter', serif;}
 
 .prof:hover  .mask		{opacity: 1;	/* マスクを表示する */
 		     	 	 	 padding-left: 120px;	/* 右にずらす */}
+
+/*lpカーソル合わせ*/
+.lp			{overflow: hidden;
+		 	 position: relative;}
+
+.lp .mask	{width: 100%;
+		 	 height: 100%;
+		 	 position: absolute;
+		 	 top: 0;
+		 	 left: 0;
+		 	 opacity: 0;	/* マスクを表示しない */
+		 	 background-color: rgba(0,0,0,0.4);
+		 	 -webkit-transition: all 0.6s ease;
+		 	 transition: all 0.6s ease}
+
+.lp:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 padding-left: 85px;	/* 右にずらす */}
+
+
+/*unfinishedカーソル合わせ*/
+.unfinished			{overflow: hidden;
+		 	 position: relative;}
+
+.unfinished .mask	{width: 100%;
+		 	 height: 100%;
+		 	 position: absolute;
+		 	 top: 0;
+		 	 left: 0;
+		 	 opacity: 0;	/* マスクを表示しない */
+		 	 background-color: rgba(0,0,0,0.4);
+		 	 -webkit-transition: all 0.6s ease;
+		 	 transition: all 0.6s ease}
+
+.unfinished:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 padding-left: 90px;	/* 右にずらす */}
+
 
 /*全カーソル合わせ*/
 .caption		 {font-size: 200%;
@@ -143,7 +185,15 @@ h2	{font-family: 'Bitter', serif;}
 
 .box2-4		{position: relative}
 
-.prof	{position: absolute}
+.prof		{position: absolute}
+
+.box2-5		{position: relative}
+
+.lp		{position: absolute}
+
+.box2-6		{position: relative}
+
+.unfinished	{position: absolute}
 
 /*box3を重ねる設定*/
 .box3-1		{position: relative;}
@@ -330,6 +380,9 @@ h4		{margin-bottom: 0}
 .la_9	{background-image: url(momijikawa.jpg);
 	 background-size: cover}
 
+.sakuhin li span {display: inline-block;
+		  text-indent: -9999px}
+
 /*meページ*/
 .workspeace	{width: 40%;
 		 height: auto}
@@ -364,10 +417,34 @@ h4		{margin-bottom: 0}
 		 font-size: 15px;
 		 margin: 0}
 
+/*lpページ*/
+.human img {width: 100%;
+            border: solid 1px #707070;
+            margin-top: 100px}
+
+.human p {font-size: 15px}
+
+.colors {display: flex}
+
+
+.list-web {border-bottom: solid 2px #B2DBF8}
+
+.list-cad {border-bottom: solid 2px #F5D2AA}
+
+.list-keiri  {border-bottom: solid 2px #BFFFC4}
+
+.list-iryou {border-bottom: solid 2px #FFD8F1}
+
+.syoku {margin-top: 0}
+
+.syoku li {padding-top: 10px} 
+
+
+
 /*########## 320px以上～413px以下##########*/
 @media (min-width: 320px) and (max-width: 413px){
 
-.box2-1,.box2-2,.box2-3,.box2-4		{width: 300px;
+.box2-1,.box2-2,.box2-3,.box2-4,.box2-5,.box2-6	{width: 300px;
 		 	 		 height: 170px}
 
 .box3	{margin-bottom: 40px}
@@ -388,7 +465,13 @@ h4		{margin-bottom: 0}
 .prof img		{width: 300px;
 		 	 height: 170px}
 
-.mylogo,.bar,.hobby,.prof 		{width: 300px;
+.lp img		{width: 300px;
+		 	 height: 170px}
+
+.unfinished img		{width: 300px;
+		 	 height: 170px}
+
+.mylogo,.bar,.hobby,.prof,.lp,.unfinished 		{width: 300px;
 		 	 			 height: 170px}
 
 /*mylogopageのレスポンシブ*/
@@ -483,12 +566,19 @@ img.gousei2	{width: 200px;
 
 .manga ul	{font-size: 14px}
 
+/*lpページ*/
+.shiyou-soft {font-size: 12px}
+
+.human p {font-size: 12px}
+
+.syoku li {font-size: 10px}
+
 } 
 /*########## 414px以上～599px以下##########*/
 @media (min-width: 414px) and (max-width: 600px){
 
 /*ボックス2内レスポンシブ*/
-.box2-1,.box2-2,.box2-3,.box2-4		{width: 340px;
+.box2-1,.box2-2,.box2-3,.box2-4,.box2-5,.box2-6	{width: 340px;
 		 	 		 height: 200px}
 
 .box3	{margin-bottom: 40px}
@@ -505,7 +595,15 @@ img.gousei2	{width: 200px;
 .prof img		{width: 340px;
 		 	 height: 200px}
 
-.mylogo,.bar,.hobby,.prof 		{width: 340px;
+.lp img		{width: 340px;
+		 	 height: 200px}
+
+
+.unfinished img		{width: 340px;
+		 	 height: 200px}
+
+
+.mylogo,.bar,.hobby,.prof,.lp,.unfinished 		{width: 340px;
 		 	 			 height: 200px}
 
 /*カーソル合わせ*/
@@ -699,6 +797,9 @@ h2	{margin-left: 30px}
 
 .box2-4		{padding-bottom: 30px}
 
+.box2-5		{padding-bottom: 30px}
+
+.box2-6		{padding-bottom: 30px}
 
 .mylogopage p	{margin-left: 10%;
 		 margin-right:10%}
@@ -715,7 +816,8 @@ h2	{margin-left: 30px}
 /*########## 1000px以上##########*/
 @media (min-width: 1000px){
 
-
+/*lp*/
+.syoku li br {display: none}
 
 /*box2を横に並べる設定*/
 .box2:after	{content: "";
@@ -738,6 +840,14 @@ h2	{margin-left: 30px}
 		 width: 50%;
                  height: 400px}
 
+.box2-5		{float: left;
+		 width: 50%;
+                 height: 400px}
+
+.box2-6		{float: left;
+		 width: 50%;
+                 height: 400px}
+
 /*box2カテゴリ内のスペース*/
 .mylogo		{bottom: 10%;
     		 left: 50%;
@@ -745,11 +855,11 @@ h2	{margin-left: 30px}
     		 -webkit-transform: translate(-50%,-10%);
     		 -ms-transform: translateX(-50%,-10%)}
 
-.bar		{bottom: 10%;
+.bar		{bottom: 15%;
     		 left: 50%;
-   		 transform: translate(-50%,-10%);
-    		 -webkit-transform: translate(-50%,-10%);
-    		 -ms-transform: translateX(-50%,-10%)}
+   		 transform: translate(-50%,-15%);
+    		 -webkit-transform: translate(-50%,-15%);
+    		 -ms-transform: translateX(-50%,-15%)}
 
 .hobby		{bottom: 15%;
     		 left: 50%;
@@ -758,6 +868,18 @@ h2	{margin-left: 30px}
     		 -ms-transform: translate(-50%,-15%)}
 
 .prof	{bottom: 15%;
+    		 left: 50%;
+   		 transform: translate(-50%,-15%);
+    		 -webkit-transform: translate(-50%,-15%);
+    		 -ms-transform: translate(-50%,-15%)}
+
+.lp	{bottom: 10%;
+    		 left: 50%;
+   		 transform: translate(-50%,-10%);
+    		 -webkit-transform: translate(-50%,-10%);
+    		 -ms-transform: translate(-50%,-10%)}
+
+.unfinished	{bottom: 15%;
     		 left: 50%;
    		 transform: translate(-50%,-15%);
     		 -webkit-transform: translate(-50%,-15%);
