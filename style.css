@@ -196,6 +196,17 @@ h2	{font-family: 'Bitter', serif;}
 .unfinished	{position: absolute}
 
 /*box3を重ねる設定*/
+.box3-0		{position: relative;}
+
+.ja		{position: absolute;
+		 bottom: 0;
+   		 right: 250px;
+		 padding-top: 5px;
+		 width: 80px;
+		 height: 25px;
+		 border-radius: 5px 5px 0 0;
+		 text-align: center}
+
 .box3-1		{position: relative;}
 
 .me		{position: absolute;
@@ -219,8 +230,16 @@ h2	{font-family: 'Bitter', serif;}
 		 text-align: center}
 
 /*box3のボタン設定*/
+.ja	{border-bottom: 0.1875em solid #C8C8C8;
+  	 cursor: pointer;
+  	 transition: all 0.3s ease 0s;
+  	 background-color: #E6E6E6;
+  	 color: #303030}
+
+.ja:hover	{border-bottom-color: transparent;
+  		 transform: translateY(0.1875em)}
+
 .me	{border-bottom: 0.1875em solid #C8C8C8;
-  	 color: #000000;
   	 cursor: pointer;
   	 transition: all 0.3s ease 0s;
   	 background-color: #E6E6E6;
@@ -230,7 +249,6 @@ h2	{font-family: 'Bitter', serif;}
   		 transform: translateY(0.1875em)}
 
 .ig	{border-bottom: 0.1875em solid #C8C8C8;
-  	 color: #000000;
   	 cursor: pointer;
   	 transition: all 0.3s ease 0s;
   	 background-color: #E6E6E6;
