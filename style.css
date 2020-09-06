@@ -457,6 +457,11 @@ h4		{margin-bottom: 0}
 
 .syoku li {padding-top: 10px} 
 
+.human .cloud-image {
+  margin-top: 0;
+  width: 70%;
+  border: none
+}
 
 
 /*########## 320px以上～413px以下##########*/
