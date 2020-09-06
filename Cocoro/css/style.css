@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/*全体の設定*/
+body {
+  background-color: #848383;
+}
+
+/*ヘッダーの設定*/
+header {
+  position: relative;
+}
+
+header .first-back {
+  width: 100vw;
+  height: 100vh;
+  vertical-align: bottom
+}
+
+.first-front {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(73,69,68,0.5);
+  color: #fff;
+  width: 34vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.first-front img {
+  margin-top: 134px
+}
+
+.first-front h1 {
+  font-size: 42px;
+  font-weight: normal;
+  padding-top: 107px;
+  padding-bottom: 72px
+}
+
+.first-front p {
+  text-align: left;
+  margin: 0 47px;
+  margin-bottom: 41px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/*横並びナビの設定*/
+.top-nav {
+  background-color: #494544;
+  padding: 40px 0 0 0;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-nav li {
+  width: 18%;
+  text-align: center;
+  border-bottom: solid 10px #C41A30;
+  padding-bottom: 30px;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #BAC8C6;
+  font-size: 20px;
+}
+
+/*概要の設定*/
+.gaiyou {
+  padding-bottom: 90px;
+  text-align: center;
+  border: solid 1px #707070;
+}
+
+.gaiyou p {
+  font-size: 14px;
+  line-height: 3;
+  color: #fff;
+  padding-top: 90px;
+}
+
+/*人気商品の設定*/
+.ninki-shohin h2 {
+  font-size: 38px;
+  text-align: center;
+  margin-top: 75px;
+}
+
+/*クロワッサンの設定*/
+.croissant {
+  width: 960px;
+  height: 240px;
+  margin: 75px auto 0 auto;
+  position: relative;
+}
+
+.croissant .pan {
+  width: 240px;
+  float: left;
+  margin-right: 76px;
+}
+
+.croissant .medal {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 23%
+}
+
+.croissant h3 {
+  font-size: 26px;
+  margin-bottom: 47px;
+}
+
+.croissant p {
+  line-height: 2
+}
+
+/*カリカリの設定*/
+.karikari {
+  width: 960px;
+  height: 240px;
+  margin: 75px auto 0 auto;
+  position: relative;
+}
+
+.karikari .pan {
+  width: 240px;
+  float: right;
+  margin-left: 76px;
+}
+
+.karikari .medal {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 23%
+}
+
+.karikari h3 {
+  font-size: 26px;
+  margin-bottom: 47px;
+}
+
+.karikari p {
+  line-height: 2
+}
+
+/*ちぎりの設定*/
+.chigiri {
+  width: 960px;
+  height: 240px;
+  margin: 75px auto 0 auto;
+  position: relative;
+}
+
+.chigiri .pan {
+  width: 240px;
+  float: left;
+  margin-right: 76px;
+}
+
+.chigiri .medal {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 23%
+}
+
+.chigiri h3 {
+  font-size: 26px;
+  margin-bottom: 47px;
+}
+
+.chigiri p {
+  line-height: 2
+}
+
+/*一覧ボタン*/
+.ninki-shohin .ichiran {
+  background-color: #fff;
+  width: 200px;
+  margin-top: 80px;
+  margin-bottom: 65px;
+  margin-left: 80%;
+  margin-right: 0;
+  padding: 19px 0 ;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 40px;
+}
+
+/*地図の設定*/
+.map {
+  position: relative;
+}
+
+.map img {
+  width: 100vw;
+}
+
+.map a {
+  color: #BAC8C6;
+  text-decoration: none;
+}
+
+.map .miyazaki {
+  position: absolute;
+  bottom: 25%;
+  left: 15%
+}
+
+.map .aichi {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+}
+
+.map .saitama {
+  position: absolute;
+  bottom: 40%;
+  left: 60%;
+}
+
+/*フッターの設定*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 960px;
+  margin:68px auto 0 auto;
+}
+
+footer .logo-s {
+  width: 113px;
+  height: 113px;
+}
+
+footer .nav-s {
+  width: 452px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .nav-s li {
+  list-style: none;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+footer .nav-s li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .sougyou {
+  line-height: 2;
+}
+
+footer .copy {
+  width: 960px;
+  text-align: center;
+  margin-top: 62px;
+  color: #C41A30;
+  font-size: 18px
+}
